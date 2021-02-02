@@ -12,120 +12,201 @@ var play9 = document.getElementById("play9");
 var plays = [play1, play2, play3, play4, play5, play6, play7, play8, play9];
 
 var counter = 0;
-var checker = false;
+
 var checkWinner = function (plays) {
   if (
     play1.innerHTML === play2.innerHTML &&
     play2.innerHTML === play3.innerHTML &&
     play3.innerHTML === "X"
   ) {
-    console.log("Player One Wins!");
-    checker = true;
+    var winner = document.createElement("div");
+    winner.innerHTML = "Player One Wins!";
+    document.body.appendChild(winner);
+    var btn = document.createElement("button");
+    btn.innerHTML = "Play Again";
+    document.body.appendChild(btn);
   } else if (
     play1.innerHTML === play2.innerHTML &&
     play2.innerHTML === play3.innerHTML &&
     play3.innerHTML === "O"
   ) {
-    checker = true;
-    console.log("player Two Wins!");
+    var winner = document.createElement("div");
+    winner.innerHTML = "Player Two Wins!";
+    document.body.appendChild(winner);
+    var btn = document.createElement("button");
+    btn.innerHTML = "Play Again";
+    document.body.appendChild(btn);
   } else if (
     play1.innerHTML === play4.innerHTML &&
     play4.innerHTML === play7.innerHTML &&
     play7.innerHTML === "X"
   ) {
-    checker = true;
-    console.log("Player One Wins!");
+    var winner = document.createElement("div");
+    winner.innerHTML = "Player One Wins!";
+    document.body.appendChild(winner);
+    var btn = document.createElement("button");
+    btn.innerHTML = "Play Again";
+    document.body.appendChild(btn);
   } else if (
     play1.innerHTML === play4.innerHTML &&
     play4.innerHTML === play7.innerHTML &&
     play7.innerHTML === "O"
   ) {
-    checker = true;
-    console.log("Player Two Wins!");
+    var winner = document.createElement("div");
+    winner.innerHTML = "Player Two Wins!";
+    document.body.appendChild(winner);
+    var btn = document.createElement("button");
+    btn.innerHTML = "Play Again";
+    document.body.appendChild(btn);
   } else if (
     play2.innerHTML === play5.innerHTML &&
     play5.innerHTML === play8.innerHTML &&
     play8.innerHTML === "X"
   ) {
-    checker = true;
-    console.log("Player One Wins!");
+    var winner = document.createElement("div");
+    winner.innerHTML = "Player One Wins!";
+    document.body.appendChild(winner);
+    var btn = document.createElement("button");
+    btn.innerHTML = "Play Again";
+    document.body.appendChild(btn);
   } else if (
     play2.innerHTML === play5.innerHTML &&
     play5.innerHTML === play8.innerHTML &&
     play8.innerHTML === "O"
   ) {
-    checker = true;
-    console.log("Player One Wins!");
+    var winner = document.createElement("div");
+    winner.innerHTML = "Player Two Wins!";
+    document.body.appendChild(winner);
+    var btn = document.createElement("button");
+    btn.innerHTML = "Play Again";
+    document.body.appendChild(btn);
   } else if (
     play3.innerHTML === play6.innerHTML &&
     play6.innerHTML === play9.innerHTML &&
     play9.innerHTML === "X"
   ) {
-    checker = true;
-    console.log("Player Two Wins!");
+    var winner = document.createElement("div");
+    winner.innerHTML = "Player One Wins!";
+    document.body.appendChild(winner);
+    var btn = document.createElement("button");
+    btn.innerHTML = "Play Again";
+    document.body.appendChild(btn);
   } else if (
     play3.innerHTML === play6.innerHTML &&
     play6.innerHTML === play9.innerHTML &&
     play9.innerHTML === "O"
   ) {
-    checker = true;
-    console.log("Player Two Wins!");
+    var winner = document.createElement("div");
+    winner.innerHTML = "Player Two Wins!";
+    document.body.appendChild(winner);
+    var btn = document.createElement("button");
+    btn.innerHTML = "Play Again";
+    document.body.appendChild(btn);
   } else if (
     play4.innerHTML === play5.innerHTML &&
     play5.innerHTML === play6.innerHTML &&
     play6.innerHTML === "X"
   ) {
-    checker = true;
-    console.log("Player One Wins!");
+    var winner = document.createElement("div");
+    winner.innerHTML = "Player One Wins!";
+    document.body.appendChild(winner);
+    var btn = document.createElement("button");
+    btn.innerHTML = "Play Again";
+    document.body.appendChild(btn);
   } else if (
     play4.innerHTML === play5.innerHTML &&
     play5.innerHTML === play6.innerHTML &&
     play6.innerHTML === "O"
   ) {
-    checker = true;
-    console.log("Player Two Wins!");
+    var winner = document.createElement("div");
+    winner.innerHTML = "Player Two Wins!";
+    document.body.appendChild(winner);
+    var btn = document.createElement("button");
+    btn.innerHTML = "Play Again";
+    document.body.appendChild(btn);
   } else if (
     play7.innerHTML === play8.innerHTML &&
     play8.innerHTML === play9.innerHTML &&
     play9.innerHTML === "X"
   ) {
-    checker = true;
-    console.log("Player One Wins!");
+    var winner = document.createElement("div");
+    winner.innerHTML = "Player One Wins!";
+    document.body.appendChild(winner);
+    var btn = document.createElement("button");
+    btn.innerHTML = "Play Again";
+    document.body.appendChild(btn);
   } else if (
     play7.innerHTML === play8.innerHTML &&
     play8.innerHTML === play9.innerHTML &&
     play9.innerHTML === "O"
   ) {
-    checker = true;
-    console.log("Player Two Wins!");
+    var winner = document.createElement("div");
+    winner.innerHTML = "Player Two Wins!";
+    document.body.appendChild(winner);
+    var btn = document.createElement("button");
+    btn.innerHTML = "Play Again";
+    document.body.appendChild(btn);
   } else if (
     play1.innerHTML === play5.innerHTML &&
     play5.innerHTML === play9.innerHTML &&
     play9.innerHTML === "X"
   ) {
-    checker = true;
-    console.log("Player One Wins!");
+    var winner = document.createElement("div");
+    winner.innerHTML = "Player One Wins!";
+    document.body.appendChild(winner);
+    var btn = document.createElement("button");
+    btn.innerHTML = "Play Again";
+    document.body.appendChild(btn);
   } else if (
     play1.innerHTML === play5.innerHTML &&
     play5.innerHTML === play9.innerHTML &&
     play9.innerHTML === "O"
   ) {
-    checker = true;
-    console.log("Player Two Wins!");
+    var winner = document.createElement("div");
+    winner.innerHTML = "Player Two Wins!";
+    document.body.appendChild(winner);
+    var btn = document.createElement("button");
+    btn.innerHTML = "Play Again";
+    document.body.appendChild(btn);
   } else if (
     play3.innerHTML === play5.innerHTML &&
     play5.innerHTML === play7.innerHTML &&
     play7.innerHTML === "X"
   ) {
-    checker = true;
-    console.log("Player One Wins!");
+    var winner = document.createElement("div");
+    winner.innerHTML = "Player One Wins!";
+    document.body.appendChild(winner);
+    var btn = document.createElement("button");
+    btn.innerHTML = "Play Again";
+    document.body.appendChild(btn);
   } else if (
     play3.innerHTML === play5.innerHTML &&
     play5.innerHTML === play7.innerHTML &&
     play7.innerHTML === "O"
   ) {
-    checker = true;
-    console.log("Player Two Wins!");
+    var winner = document.createElement("div");
+    winner.innerHTML = "Player Two Wins!";
+    document.body.appendChild(winner);
+    var btn = document.createElement("button");
+    btn.innerHTML = "Play Again";
+    document.body.appendChild(btn);
+  } else if (
+    play1.innerHTML !== "" &&
+    play2.innerHTML !== "" &&
+    play3.innerHTML !== "" &&
+    play4.innerHTML !== "" &&
+    play5.innerHTML !== "" &&
+    play6.innerHTML !== "" &&
+    play7.innerHTML !== "" &&
+    play8.innerHTML !== "" &&
+    play9.innerHTML !== ""
+  ) {
+    var winner = document.createElement("div");
+    winner.innerHTML = "Ow We Have a Tie Here!";
+    document.body.appendChild(winner);
+    var btn = document.createElement("button");
+    btn.innerHTML = "Play Again";
+    document.body.appendChild(btn);
   }
 };
 
@@ -144,7 +225,6 @@ var checkPlays = function () {
       }
     });
   });
-  
 };
 
 checkPlays();
