@@ -12,7 +12,21 @@ var play9 = document.getElementById("play9");
 var plays = [play1, play2, play3, play4, play5, play6, play7, play8, play9];
 
 var counter = 0;
-
+var emptyAll = function () {
+  play1.innerHTML = "";
+  play2.innerHTML = "";
+  play3.innerHTML = "";
+  play4.innerHTML = "";
+  play5.innerHTML = "";
+  play6.innerHTML = "";
+  play7.innerHTML = "";
+  play8.innerHTML = "";
+  play9.innerHTML = "";
+  var div = document.getElementsByTagName("div");
+  var btn = document.getElementsByTagName("button");
+  div[0].remove();
+  btn[0].remove();
+};
 var checkWinner = function (plays) {
   if (
     play1.innerHTML === play2.innerHTML &&
@@ -25,6 +39,7 @@ var checkWinner = function (plays) {
     var btn = document.createElement("button");
     btn.innerHTML = "Play Again";
     document.body.appendChild(btn);
+    btn.addEventListener("click", emptyAll);
   } else if (
     play1.innerHTML === play2.innerHTML &&
     play2.innerHTML === play3.innerHTML &&
@@ -36,6 +51,7 @@ var checkWinner = function (plays) {
     var btn = document.createElement("button");
     btn.innerHTML = "Play Again";
     document.body.appendChild(btn);
+    btn.addEventListener("click", emptyAll);
   } else if (
     play1.innerHTML === play4.innerHTML &&
     play4.innerHTML === play7.innerHTML &&
@@ -47,6 +63,7 @@ var checkWinner = function (plays) {
     var btn = document.createElement("button");
     btn.innerHTML = "Play Again";
     document.body.appendChild(btn);
+    btn.addEventListener("click", emptyAll);
   } else if (
     play1.innerHTML === play4.innerHTML &&
     play4.innerHTML === play7.innerHTML &&
@@ -58,6 +75,7 @@ var checkWinner = function (plays) {
     var btn = document.createElement("button");
     btn.innerHTML = "Play Again";
     document.body.appendChild(btn);
+    btn.addEventListener("click", emptyAll);
   } else if (
     play2.innerHTML === play5.innerHTML &&
     play5.innerHTML === play8.innerHTML &&
@@ -69,6 +87,7 @@ var checkWinner = function (plays) {
     var btn = document.createElement("button");
     btn.innerHTML = "Play Again";
     document.body.appendChild(btn);
+    btn.addEventListener("click", emptyAll);
   } else if (
     play2.innerHTML === play5.innerHTML &&
     play5.innerHTML === play8.innerHTML &&
@@ -80,6 +99,7 @@ var checkWinner = function (plays) {
     var btn = document.createElement("button");
     btn.innerHTML = "Play Again";
     document.body.appendChild(btn);
+    btn.addEventListener("click", emptyAll);
   } else if (
     play3.innerHTML === play6.innerHTML &&
     play6.innerHTML === play9.innerHTML &&
@@ -91,6 +111,7 @@ var checkWinner = function (plays) {
     var btn = document.createElement("button");
     btn.innerHTML = "Play Again";
     document.body.appendChild(btn);
+    btn.addEventListener("click", emptyAll);
   } else if (
     play3.innerHTML === play6.innerHTML &&
     play6.innerHTML === play9.innerHTML &&
@@ -102,6 +123,7 @@ var checkWinner = function (plays) {
     var btn = document.createElement("button");
     btn.innerHTML = "Play Again";
     document.body.appendChild(btn);
+    btn.addEventListener("click", emptyAll);
   } else if (
     play4.innerHTML === play5.innerHTML &&
     play5.innerHTML === play6.innerHTML &&
@@ -113,6 +135,7 @@ var checkWinner = function (plays) {
     var btn = document.createElement("button");
     btn.innerHTML = "Play Again";
     document.body.appendChild(btn);
+    btn.addEventListener("click", emptyAll);
   } else if (
     play4.innerHTML === play5.innerHTML &&
     play5.innerHTML === play6.innerHTML &&
@@ -124,6 +147,7 @@ var checkWinner = function (plays) {
     var btn = document.createElement("button");
     btn.innerHTML = "Play Again";
     document.body.appendChild(btn);
+    btn.addEventListener("click", emptyAll);
   } else if (
     play7.innerHTML === play8.innerHTML &&
     play8.innerHTML === play9.innerHTML &&
@@ -135,6 +159,7 @@ var checkWinner = function (plays) {
     var btn = document.createElement("button");
     btn.innerHTML = "Play Again";
     document.body.appendChild(btn);
+    btn.addEventListener("click", emptyAll);
   } else if (
     play7.innerHTML === play8.innerHTML &&
     play8.innerHTML === play9.innerHTML &&
@@ -146,6 +171,7 @@ var checkWinner = function (plays) {
     var btn = document.createElement("button");
     btn.innerHTML = "Play Again";
     document.body.appendChild(btn);
+    btn.addEventListener("click", emptyAll);
   } else if (
     play1.innerHTML === play5.innerHTML &&
     play5.innerHTML === play9.innerHTML &&
@@ -157,6 +183,7 @@ var checkWinner = function (plays) {
     var btn = document.createElement("button");
     btn.innerHTML = "Play Again";
     document.body.appendChild(btn);
+    btn.addEventListener("click", emptyAll);
   } else if (
     play1.innerHTML === play5.innerHTML &&
     play5.innerHTML === play9.innerHTML &&
@@ -168,6 +195,7 @@ var checkWinner = function (plays) {
     var btn = document.createElement("button");
     btn.innerHTML = "Play Again";
     document.body.appendChild(btn);
+    btn.addEventListener("click", emptyAll);
   } else if (
     play3.innerHTML === play5.innerHTML &&
     play5.innerHTML === play7.innerHTML &&
@@ -179,6 +207,7 @@ var checkWinner = function (plays) {
     var btn = document.createElement("button");
     btn.innerHTML = "Play Again";
     document.body.appendChild(btn);
+    btn.addEventListener("click", emptyAll);
   } else if (
     play3.innerHTML === play5.innerHTML &&
     play5.innerHTML === play7.innerHTML &&
@@ -190,6 +219,7 @@ var checkWinner = function (plays) {
     var btn = document.createElement("button");
     btn.innerHTML = "Play Again";
     document.body.appendChild(btn);
+    btn.addEventListener("click", emptyAll);
   } else if (
     play1.innerHTML !== "" &&
     play2.innerHTML !== "" &&
@@ -207,6 +237,7 @@ var checkWinner = function (plays) {
     var btn = document.createElement("button");
     btn.innerHTML = "Play Again";
     document.body.appendChild(btn);
+    btn.addEventListener("click", emptyAll);
   }
 };
 
@@ -227,5 +258,19 @@ var checkPlays = function () {
   });
 };
 
+// var btn = document.createElement("button");
+// btn.innerHTML = "Play Again";
+// document.body.appendChild(btn);
+// btn.addEventListener("click", () => {
+//   document.getElementsById("play1").innerHTML = "";
+//   document.getElementsById("play2").innerHTML = "";
+//   document.getElementsById("play3").innerHTML = "";
+//   document.getElementsById("play4").innerHTML = "";
+//   document.getElementsById("play5").innerHTML = "";
+//   document.getElementsById("play6").innerHTML = "";
+//   document.getElementsById("play7").innerHTML = "";
+//   document.getElementsById("play8").innerHTML = "";
+//   document.getElementsById("play9").innerHTML = "";
+// });
+
 checkPlays();
-// checkWinner();
